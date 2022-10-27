@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "survivallightblocks",
+  "version": "${version}",
+
+  "name": "Survival Light Blocks",
+  "description": "Mod that highlights light blocks in survival mode while holding a light block in your hand",
+  "authors": [
+    "Apehum"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/plasmoapp/survival-light-blocks"
+  },
+
+  "license": "MIT",
+  "icon": "assets/survivallightblock/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "su.plo.light.SurvivalLightBlock"
+    ]
+  },
+  "mixins": [
+    "survivallightblock.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": ">=1.17",
+    "java": ">=8"
+  }
+}
